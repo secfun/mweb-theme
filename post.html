@@ -16,7 +16,7 @@ $(function(){
           {% if post.cats.@count %}<span>posted in&nbsp;</span> {% /if %}
           {% for cat in post.cats %}
           <span class="posted-in"><a href='{{ cat.url }}'>{{ cat.name }}</a></span>
-          {% /for %} 
+          {% /for %}
           <span class="comments">
             {% if ext_disqus_shortname.length %}
             <a href="{{ siteURL }}{{post.url}}#disqus_thread">comments</a>
